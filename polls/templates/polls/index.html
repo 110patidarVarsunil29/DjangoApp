@@ -5,6 +5,12 @@
     <title>Index Page</title>
 </head>
 <body>
+<div class="center">
+  <p>This text is centered.</p>
+</div>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}">
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
