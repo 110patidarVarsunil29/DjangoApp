@@ -6,7 +6,6 @@ from django.http import Http404
 from django.urls import reverse
 from django.views import generic
 
-
 # def index(request):
 # return HttpResponse("Hello Everyone!!, This is a Django framework!!")
 # latest_question_list = Question.objects.order_by('-pub_date')[:5]
@@ -25,6 +24,7 @@ from django.views import generic
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]
 #     context = {'latest_question_list': latest_question_list}
 #     return render(request, 'employee_register/index.html', context)
+
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
@@ -84,3 +84,31 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+
+
+def handler404(request, exception):
+    context = {}
+    response = render(request, "polls/404.html", context=context)
+    response.status_code = 404
+    return response
+
+
+def handler403(request, exception):
+    context = {}
+    response = render(request, "polls/403.html", context=context)
+    response.status_code = 403
+    return response
+
+
+def handler400(request, exception):
+    context = {}
+    response = render(request, "polls/400.html", context=context)
+    response.status_code = 400
+    return response
+
+
+def handler500(request):
+    context = {}
+    response = render(request, "polls/500.html", context=context)
+    response.status_code = 500
+    return response

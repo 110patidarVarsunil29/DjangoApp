@@ -4,5 +4,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Django" />
+    <orderEntry type="module" module-name="Django" />
+    <orderEntry type="module" module-name="IDBIDjango" />
+    <orderEntry type="module" module-name="Django3.0" />
+    <orderEntry type="module" module-name="mysite" />
   </component>
 </module>

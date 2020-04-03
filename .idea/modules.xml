@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://G:/Django/.idea/Django.iml" filepath="G:/Django/.idea/Django.iml" />
+      <module fileurl="file://G:/Django3.0/.idea/Django3.0.iml" filepath="G:/Django3.0/.idea/Django3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DjangoApp.iml" filepath="$PROJECT_DIR$/.idea/DjangoApp.iml" />
+      <module fileurl="file://G:/IDBI/.idea/IDBIDjango.iml" filepath="G:/IDBI/.idea/IDBIDjango.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Idbi/.idea/Idbi.iml" filepath="$PROJECT_DIR$/../Idbi/.idea/Idbi.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PyLearn/.idea/PyLearn.iml" filepath="$PROJECT_DIR$/../PyLearn/.idea/PyLearn.iml" />
+      <module fileurl="file://G:/mysite/.idea/mysite.iml" filepath="G:/mysite/.idea/mysite.iml" />
     </modules>
   </component>
 </project>

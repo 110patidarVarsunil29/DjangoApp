@@ -22,15 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p7db7dz4tf72eh0l!ef+)fu2kvrbt0*320#c653ae0ltq_z__='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
+TEMPLATE_DEBUG = DEBUG
 # Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
-    #'employee_register.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,14 +73,14 @@ WSGI_APPLICATION = 'DjangoApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
+# 'ENGINE': 'django.db.backends.sqlite3',
 #        'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #        'NAME': os.path.join(BASE_DIR, 'db.mysql'),
 #    }
-#}
+# }
 
 DATABASES = {
     'default': {
@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'Python',
         'USER': 'root',
         'PASSWORD': 'super',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
         'PORT': '3307',
     }
 }
@@ -128,4 +128,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
